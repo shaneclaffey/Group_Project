@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shane.screenstest.MainActivity"
+    android:background="#b988fc">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:id="@+id/linearLayout2" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:rowOrderPreserved="false"
+        android:nestedScrollingEnabled="true"
+        android:columnOrderPreserved="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Shapes"
+        android:id="@+id/shapes_text_button"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:textColor="#f9f9f9"
+        android:textAlignment="center"
+        android:textSize="30dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:paddingTop="40dp"
+            android:layout_marginRight="40dp" />
+
+        <ImageButton
+            android:layout_width="170dp"
+            android:layout_height="127dp"
+            android:id="@+id/shapes_image_button"
+            android:src="@drawable/shapes"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Colours"
+            android:id="@+id/colours_text_button"
+            android:textSize="30dp"
+            android:textColor="#f6f6f6"
+            android:clickable="true"
+            android:layout_below="@+id/shapes_image_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:paddingTop="40dp" />
+
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="134dp"
+            android:id="@+id/colour_image_button"
+            android:src="@drawable/colourwheel"
+            android:clickable="true"
+            android:cropToPadding="true"
+            android:scaleType="fitEnd"
+            android:layout_alignTop="@+id/shapes_text_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="-10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Animal Sounds"
+            android:id="@+id/animal_text_button"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textSize="25dp"
+            android:textColor="#f2f2f2"
+            android:paddingTop="45dp" />
+
+        <ImageView
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/animal_image_button"
+            android:src="@drawable/animal"
+            android:layout_below="@+id/colours_text_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:paddingLeft="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Learning Songs"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:textSize="25dp"
+            android:textColor="#f2f2f2"
+            android:paddingTop="35dp"
+            android:id="@+id/video_text_button" />
+
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="111dp"
+            android:id="@+id/video_image_button"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:src="@drawable/video"
+            android:layout_marginLeft="55dp" />
+
+    </GridLayout>
+
+
+</RelativeLayout>

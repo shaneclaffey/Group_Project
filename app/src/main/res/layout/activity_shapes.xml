@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shane.screenstest.ShapesActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Shapes"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:id="@+id/Header"
+        android:layout_marginTop="-10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="English"
+        android:id="@+id/english_text_button"
+        android:layout_below="@+id/Header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Irish"
+        android:id="@+id/irish_text_button"
+        android:layout_below="@+id/english_text_button"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/irish_text_button"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Square"
+            android:id="@+id/square_text"
+            android:layout_marginTop="20dp" />
+
+        <ImageButton
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:id="@+id/square_image"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/square"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="75dp"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Pentagon"
+            android:id="@+id/pentagon_text"
+            android:layout_marginTop="50dp" />
+
+        <ImageView
+            android:layout_width="111dp"
+            android:layout_height="80dp"
+            android:id="@+id/pentagon_image"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/pentagon"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="75dp"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Circle"
+            android:id="@+id/circle_text"
+            android:layout_marginTop="50dp" />
+
+        <ImageView
+            android:layout_width="172dp"
+            android:layout_height="72dp"
+            android:id="@+id/circle_image"
+            android:src="@drawable/circle"
+            android:layout_marginTop="-50dp"
+            android:layout_weight="0.18"
+            android:layout_marginLeft="125dp"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Rectangle"
+            android:id="@+id/rectangle_text"
+            android:layout_marginTop="50dp" />
+
+        <ImageView
+            android:layout_width="101dp"
+            android:layout_height="74dp"
+            android:id="@+id/rectangle_image"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/rectangle"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="80dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video"
+        android:id="@+id/button"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
