@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class AnimalsActivity extends AppCompatActivity {
+public class AnimalsActivityIrish extends AppCompatActivity {
+
 
 
     public ImageView cow_button;
@@ -75,16 +76,16 @@ public class AnimalsActivity extends AppCompatActivity {
         });
     }
 
-    public TextView irish_text_button;
+    public TextView english_text_button;
 
-    public void irishTextButton(){
-        irish_text_button = (TextView)findViewById(R.id.irish_text_button);
-        irish_text_button.setOnClickListener(new View.OnClickListener() {
+    public void englishTextButton(){
+        english_text_button = (TextView)findViewById(R.id.english_text_button);
+        english_text_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent irishAnimals = new Intent(AnimalsActivity.this, AnimalsActivityIrish.class);
-                startActivity(irishAnimals);
+                Intent englishAnimals = new Intent(AnimalsActivityIrish.this, AnimalsActivity.class);
+                startActivity(englishAnimals);
 
             }
 
@@ -95,15 +96,15 @@ public class AnimalsActivity extends AppCompatActivity {
     }
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_animals);
+        setContentView(R.layout.activity_animals_activity_irish);
         cowSound();
         dogSound();
         duckSound();
         sheepSound();
-        irishTextButton();
-
+        englishTextButton();
     }
 }

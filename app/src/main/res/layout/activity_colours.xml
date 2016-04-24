@@ -60,7 +60,8 @@
                 android:text="Red"
                 android:id="@+id/red_text"
                 android:layout_marginTop="20dp"
-                android:textColor="#fb2424" />
+                android:textColor="#fb2424"
+                android:clickable="false" />
 
             <ImageView
                 android:layout_width="79dp"
@@ -79,7 +80,8 @@
                 android:text="Pink"
                 android:id="@+id/pink_text"
                 android:layout_marginTop="35dp"
-                android:textColor="#fb08ff" />
+                android:textColor="#fb08ff"
+                android:clickable="false" />
 
             <ImageView
                 android:layout_width="111dp"
@@ -96,9 +98,10 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Green"
-                android:id="@+id/circle_text"
+                android:id="@+id/green_text"
                 android:layout_marginTop="35dp"
-                android:textColor="#32a72a" />
+                android:textColor="#32a72a"
+                android:clickable="false" />
 
             <ImageView
                 android:layout_width="85dp"
@@ -115,9 +118,10 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Blue"
-                android:id="@+id/rectangle_text"
+                android:id="@+id/blue_text"
                 android:layout_marginTop="50dp"
-                android:textColor="#3799c6" />
+                android:textColor="#3799c6"
+                android:clickable="false" />
 
             <ImageView
                 android:layout_width="121dp"

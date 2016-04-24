@@ -40,32 +40,6 @@ public class SoundsActivity extends AppCompatActivity {
         });
     }
 
-    public Button numbers_button;
-    MediaPlayer numbers;
-
-    public void numbersSound() {
-        numbers_button = (Button) findViewById(R.id.numbers_button);
-        numbers = MediaPlayer.create(this, R.raw.numbers);
-        numbers_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                numbers.start();
-            }
-
-        });
-    }
-
-    public void numbersStop() {
-        numbers_button = (Button) findViewById(R.id.numbers_stop);
-        numbers_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                numbers.release();
-            }
-
-        });
-    }
-
 
 
     @Override

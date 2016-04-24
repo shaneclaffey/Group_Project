@@ -76,9 +76,6 @@ public class ColoursActivity extends AppCompatActivity {
     }
 
 
-
-
-
     public TextView irish_text_button;
 
     public void irishTextButton(){
